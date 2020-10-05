@@ -10,7 +10,7 @@ import webbrowser
 r =  sr.Recognizer()
 mic = sr.Microphone()
 
-def sesliKomut(): # ses algılama fonksiyonu
+def sesliKomut(): #ses algılama fonksiyonu
     with mic as m:
         audio = r.listen(m)
         text  = r.recognize_google(audio,language='tr-TR')
